@@ -12,7 +12,7 @@ body, html{
     height: 100%;
 }
 .calculator-body{
-    height: inherit;
+    height: 100vh;
     width: 100%;
     background-color: rgb(27, 27, 27);
 }
@@ -67,7 +67,6 @@ body, html{
     padding: 1rem 4%;
     flex: auto;
     background-color: #00000000;
-    margin: 1px;
 }
 .button{
     background-color: #0000004f;
@@ -101,15 +100,8 @@ body, html{
     display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 0px 0px;
-  height: calc(100% - 215px);
-  grid-template-areas:
-    ". . . ."
-    ". . . ."
-    ". . . ."
-    ". . . ."
-    ". . . ."
-    ". . . .";
+  height: calc(100% - 211px);
+  grid-gap: 1px;
 }
 .history,.memory{
     padding: 8px 12px;
